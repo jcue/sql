@@ -9,10 +9,12 @@ conn = sqlite3.connect("new.db")
 # get a cursor object used to execute SQL commands
 cursor = conn.cursor()
 
-# create table
-cursor.execute("""CREATE TABLE population
-				  (city TEXT, state Text, population INT)
-				  """)
+# insert data
+cursor.execute("INSERT INTO population VALUES('New York city', 'NY', 8200000)")
+cursor.execute("INSERT INTO population VALUES('San Francisco', 'CA', 800000)")
 
-# close teh database connection
+# commit the changes
+conn.commit()
+
+# close the database connection
 conn.close()
