@@ -1,4 +1,4 @@
-# UPDATE and DELETE statement
+# UPDATE and DELETE statements
 
 import sqlite3
 
