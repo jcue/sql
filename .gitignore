@@ -8,3 +8,5 @@
 *.swp
 *.out
 */.idea
+*.sublime-project
+*.sublime-workspace
